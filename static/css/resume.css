@@ -1,0 +1,66 @@
+:root{
+      --accent:#1565c0;
+      --muted:#6b7280;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --text:#0f172a;
+      --glass: rgba(255,255,255,0.6);
+      font-family: Inter, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#eef2f7);color:var(--text);}
+    .container{max-width:1100px;margin:32px auto;padding:24px}
+
+    /* Resume card */
+    .resume{display:grid;grid-template-columns:320px 1fr;gap:28px;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 6px 30px rgba(15,23,42,0.08)}
+
+    /* Left column */
+    .side{background:linear-gradient(180deg,var(--accent),#0b63a6);color:white;padding:28px}
+    .name{font-size:20px;font-weight:700;margin-bottom:6px}
+    .role{font-size:13px;opacity:0.95;margin-bottom:14px}
+    .contact{font-size:13px;color:rgba(255,255,255,0.95);line-height:1.5}
+    .contact a{color:inherit;text-decoration:none;font-weight:600}
+
+    hr.sep{border:0;border-top:1px solid rgba(255,255,255,0.08);margin:20px 0}
+    h4.section{color:var(--text);font-size:16px;margin:0 0 12px 0}
+
+    /* Left lists */
+    .muted{color:var(--muted);font-size:13px}
+    .list{background:transparent;padding:0;margin:0;list-style:none}
+    .list li{font-size:13px;padding:6px 0;border-left:3px solid transparent}
+
+    .chip{display:inline-block;background:rgba(255,255,255,0.08);padding:6px 10px;border-radius:999px;font-size:12px;margin:4px 6px 4px 0}
+
+    /* Right column */
+    .main{padding:28px}
+    header.top{display:flex;justify-content:space-between;align-items:start}
+    .title{font-size:24px;font-weight:700;margin:0}
+    .sub{color:var(--muted);font-size:13px}
+
+    section{margin-bottom:18px}
+    .job{margin-bottom:12px}
+    .job .company{font-weight:700;color:var(--accent)}
+    .job .title{font-weight:600}
+    .job .meta{color:var(--muted);font-size:13px}
+    .bullets{margin:8px 0 0 0;padding-left:18px}
+    .bullets li{margin:8px 0;font-size:14px;color:#10263b}
+
+    /* Skills grid */
+    .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}
+
+    /* Experience / Projects */
+    .project-title{font-weight:700;color:var(--accent)}
+
+    /* Responsive */
+    @media(max-width:880px){
+      .resume{grid-template-columns:1fr;}
+      .side{display:flex;gap:18px;align-items:center}
+      .contact{font-size:12px}
+    }
+
+    /* Print */
+    @media print{
+      body{background:white}
+      .container{box-shadow:none;margin:0}
+      .resume{box-shadow:none;border-radius:0}
+    }
