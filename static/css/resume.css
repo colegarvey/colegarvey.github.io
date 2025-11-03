@@ -64,3 +64,30 @@
       .container{box-shadow:none;margin:0}
       .resume{box-shadow:none;border-radius:0}
     }
+
+    #resume {
+  width: 794px;   /* exact width for A4 @ 96dpi */
+  min-height: 1123px; /* full page height */
+  margin: 0 auto;
+  background: white;
+  box-shadow: none;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  #resume {
+    box-shadow: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  .btn {
+    display: none !important;
+  }
+}
