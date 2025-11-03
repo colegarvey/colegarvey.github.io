@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Cole Garvey — Resume</title>
   <link rel="stylesheet" href="/static/css/resume.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <div id="resume" class="resume">
+    <div class="resume">
       <aside class="side">
         <div>
           <div class="name">Cole Garvey</div>
@@ -149,24 +148,7 @@
       </main>
 
     </div>
-    <button id="downloadBtn" class="btn">Download PDF</button>
   </div>
-
-  
-<script>
-  document.getElementById("downloadBtn").addEventListener("click", () => {
-    const element = document.getElementById("resume");
-    const opt = {
-      margin:       [0, 0, 0, 0],
-      filename:     'ColeGarvey_Resume.pdf',
-      image:        { type: 'jpeg', quality: 1 },
-      html2canvas:  { scale: 4, useCORS: true, scrollY: 0 },
-      jsPDF:        { unit: 'pt', format: 'a4', orientation: 'portrait' },
-      pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
-    };
-    html2pdf().set(opt).from(element).save();
-  });
-</script>
 
 </body>
 </html>
