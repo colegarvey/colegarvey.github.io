@@ -25,7 +25,7 @@
     h4.section{color:var(--text);font-size:16px;margin:0 0 12px 0}
 
     /* Left lists */
-    .muted{color:var(--muted);font-size:13px}
+    .muted{color:silver;font-size:13px}
     .list{background:transparent;padding:0;margin:0;list-style:none}
     .list li{font-size:13px;padding:6px 0;border-left:3px solid transparent}
 
