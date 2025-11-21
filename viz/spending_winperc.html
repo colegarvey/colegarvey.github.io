@@ -3,9 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <style>
+    /* Full-page centering */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;   /* horizontal centering */
+      align-items: center;       /* vertical centering */
+      min-height: 100vh;         /* full screen height */
+      background: #ffffff;
+    }
+
+    /* Center the visualization container */
+    #vis {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Vega embed layout fixes */
     #vis.vega-embed {
       width: 100%;
       display: flex;
+      justify-content: center;
     }
 
     #vis.vega-embed details,
