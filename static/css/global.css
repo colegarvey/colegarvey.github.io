@@ -57,3 +57,35 @@
     font-size: 1rem;
   }
 }
+
+/* Footer */
+#social-footer {
+  width: 100%;
+  padding: 20px 0;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+#social-footer.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.footer-icon svg {
+  fill: white;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-icon:hover svg {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
